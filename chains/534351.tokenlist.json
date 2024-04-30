@@ -1,0 +1,64 @@
+{
+  "name": "Staqe Protocol",
+  "logoURI": "https://bafybeibkoohmrfcoltp63ga7c63ww5v45pupm22pavminkzgxgqq7cmd5q.ipfs.dweb.link",
+  "keywords": ["stake", "pool"],
+  "tags": {
+    "staqe": {
+      "name": "Staqe Protocol",
+      "description": "Tokens used to create a pool in Staqe.App"
+    }
+  },
+  "timestamp": "2024-04-30T00:01:34.275929+00:00",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xA21ee3A746c8c74CA8E583D5da252f70F48d70f1",
+      "symbol": "SMW",
+      "name": "Spooky Mothman Warmer",
+      "decimals": 18,
+      "logoURI": "ipfs://QmUA6swjybzSYYToBK26z9PjrKuGwQq7GgCgtt7bpUErcY",
+      "tags": ["staqe"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x175c4fAA937C5370f1B24bE462095294C4CA647C",
+      "symbol": "SPW",
+      "name": "Sneezy Pirate Whisperer",
+      "decimals": 0,
+      "logoURI": "ipfs://QmSp94AnY12HQBFnehRdsPUo2oHhtd6TKis9tCztjQwrCH",
+      "tags": ["staqe"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x946607Ed13004C87Ccb143Aaa36F8366ee140DE4",
+      "symbol": "RWD",
+      "name": "Reward Token",
+      "decimals": 18,
+      "logoURI": "ipfs://QmSUdXGepqPsabF2T2v7Tmq6UgEnYnSri1i6WAShcmukRS",
+      "tags": ["staqe"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x7912dAc6fd263970099e396a89B5D90e2F09b447",
+      "symbol": "SPS",
+      "name": "Splashy Pegasus Shifter",
+      "decimals": 18,
+      "logoURI": "ipfs://QmUA6swjybzSYYToBK26z9PjrKuGwQq7GgCgtt7bpUErcY",
+      "tags": ["staqe"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xDC49056E64c7E3791BEE105BD23B6B79B081D61f",
+      "symbol": "SSI",
+      "name": "Slow Seraph Increaser",
+      "decimals": 0,
+      "logoURI": "ipfs://QmSp94AnY12HQBFnehRdsPUo2oHhtd6TKis9tCztjQwrCH",
+      "tags": ["staqe"]
+    }
+  ],
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
