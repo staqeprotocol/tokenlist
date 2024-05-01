@@ -98,7 +98,7 @@ for chain_id, chain_details in chains.items():
             for token in tokens:
                 if token["address"] not in added_addresses:
                     all_tokens.append({
-                        "chainId": token["chainId"],
+                        "chainId": chain_id,
                         "address": token["address"],
                         "symbol": token["symbol"],
                         "name": token["name"],
