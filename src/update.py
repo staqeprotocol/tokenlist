@@ -4,6 +4,8 @@ import requests
 from pathlib import Path
 from datetime import datetime, timezone
 
+version = ""
+
 chains = {
     534351: {
         "rpc_url": "https://sepolia-rpc.scroll.io",
@@ -78,8 +80,10 @@ def update_token_list(chain_id, new_tokens):
     token_list['timestamp'] = datetime.now(timezone.utc).isoformat()
     with open(token_list_path, 'w') as file:
         json.dump(token_list, file, indent=4)
-    
-    return token_list['version']
+
+    v = token_list['version']
+
+    return f"{v['major']}.{v['minor']}.{v['patch']}"
 
 for chain_id, chain_details in chains.items():
     w3 = Web3(Web3.HTTPProvider(chain_details['rpc_url']))
@@ -110,4 +114,6 @@ for chain_id, chain_details in chains.items():
         except Exception as e:
             print(f"Failed to fetch tokenURI for tokenId {i}: {str(e)}")
 
-    update_token_list(chain_id, all_tokens)
+    version = update_token_list(chain_id, all_tokens)
+
+print(version)
