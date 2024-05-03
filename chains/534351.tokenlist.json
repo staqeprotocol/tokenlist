@@ -11,7 +11,7 @@
             "description": "Tokens used to create a pool in Staqe.App"
         }
     },
-    "timestamp": "2024-05-03T01:30:07.964045+00:00",
+    "timestamp": "2024-05-03T01:49:46.754743+00:00",
     "tokens": [
         {
             "chainId": 534351,
@@ -67,11 +67,33 @@
             "tags": [
                 "staqe"
             ]
+        },
+        {
+            "chainId": 534351,
+            "address": "0x96d30D8b5aC2Df63D881C8C94bAbA85Ee2c8D5d2",
+            "symbol": "SMS",
+            "name": "Slow Mothman Spender",
+            "decimals": 18,
+            "logoURI": "ipfs://QmSUdXGepqPsabF2T2v7Tmq6UgEnYnSri1i6WAShcmukRS",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 534351,
+            "address": "0xf057Ab110f634dAc525e507B768db29202d2526D",
+            "symbol": "GST",
+            "name": "Giggly Sphinx Tickler",
+            "decimals": 0,
+            "logoURI": "ipfs://QmSp94AnY12HQBFnehRdsPUo2oHhtd6TKis9tCztjQwrCH",
+            "tags": [
+                "staqe"
+            ]
         }
     ],
     "version": {
         "major": 0,
         "minor": 0,
-        "patch": 4
+        "patch": 5
     }
 }
