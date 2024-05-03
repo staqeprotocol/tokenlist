@@ -11,7 +11,7 @@
             "description": "Tokens used to create a pool in Staqe.App"
         }
     },
-    "timestamp": "2024-05-03T16:42:00.461652+00:00",
+    "timestamp": "2024-05-03T20:20:08.523321+00:00",
     "tokens": [
         {
             "chainId": 1029,
@@ -45,11 +45,33 @@
             "tags": [
                 "staqe"
             ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0x7912dAc6fd263970099e396a89B5D90e2F09b447",
+            "symbol": "MSH",
+            "name": "Misty Satyr Healer",
+            "decimals": 18,
+            "logoURI": "ipfs://bafybeid6usttpc5jkdrdilfsia5s5btr6qg7p7go2hwyah52aepjy36gci",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0xDC49056E64c7E3791BEE105BD23B6B79B081D61f",
+            "symbol": "CPB",
+            "name": "Crunchy Pixie Blunter",
+            "decimals": 0,
+            "logoURI": "ipfs://bafybeifcdi5nzbb6ld744lqmama4dlxteymd4q7npx6bwqz7qctn7xdtsa",
+            "tags": [
+                "staqe"
+            ]
         }
     ],
     "version": {
         "major": 0,
         "minor": 0,
-        "patch": 1
+        "patch": 2
     }
 }
