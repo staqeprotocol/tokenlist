@@ -94,7 +94,7 @@ for chain_id, chain_details in chains.items():
     all_tokens = []
     added_addresses = set()
 
-    for i in range(1, total_pools):
+    for i in range(1, total_pools + 1):
         try:
             ipfs_hash = contract.functions.tokenURI(i).call()
             metadata = fetch_ipfs_metadata(ipfs_hash)
