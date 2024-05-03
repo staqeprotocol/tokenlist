@@ -11,14 +11,14 @@ chains = {
         "rpc_url": "https://sepolia-rpc.scroll.io",
         "contract_address": "0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f"
     },
-    # 1028: {
-    #     "rpc_url": "https://testrpc.bittorrentchain.io",
-    #     "contract_address": "YOUR_CONTRACT_ADDRESS_FOR_CHAIN_1028"
-    # },
-    # 97: {
-    #     "rpc_url": "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
-    #     "contract_address": "YOUR_CONTRACT_ADDRESS_FOR_CHAIN_97"
-    # }
+    1028: {
+        "rpc_url": "https://pre-rpc.bittorrentchain.io",
+        "contract_address": "0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f"
+    },
+    97: {
+        "rpc_url": "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
+        "contract_address": "0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f"
+    }
 }
 
 contract_abi = [
