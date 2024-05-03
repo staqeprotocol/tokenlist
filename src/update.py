@@ -11,7 +11,7 @@ chains = {
         "rpc_url": "https://sepolia-rpc.scroll.io",
         "contract_address": "0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f"
     },
-    1028: {
+    1029: {
         "rpc_url": "https://pre-rpc.bittorrentchain.io",
         "contract_address": "0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f"
     },
