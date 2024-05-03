@@ -1,0 +1,21 @@
+{
+    "name": "Staqe Protocol",
+    "logoURI": "https://bafybeibkoohmrfcoltp63ga7c63ww5v45pupm22pavminkzgxgqq7cmd5q.ipfs.dweb.link",
+    "keywords": [
+        "stake",
+        "pool"
+    ],
+    "tags": {
+        "staqe": {
+            "name": "Staqe Protocol",
+            "description": "Tokens used to create a pool in Staqe.App"
+        }
+    },
+    "timestamp": "2024-05-03T01:30:08.261677+00:00",
+    "tokens": [],
+    "version": {
+        "major": 0,
+        "minor": 0,
+        "patch": 1
+    }
+}
