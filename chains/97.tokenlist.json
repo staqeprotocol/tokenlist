@@ -11,7 +11,7 @@
             "description": "Tokens used to create a pool in Staqe.App"
         }
     },
-    "timestamp": "2024-05-04T00:56:22.878769+00:00",
+    "timestamp": "2024-05-05T01:00:35.672804+00:00",
     "tokens": [
         {
             "chainId": 97,
@@ -45,11 +45,33 @@
             "tags": [
                 "staqe"
             ]
+        },
+        {
+            "chainId": 97,
+            "address": "0xDd060b4AA4457B7cf982b7C402cd1c486293d180",
+            "symbol": "FBS",
+            "name": "Frosty Banshee Singer",
+            "decimals": 18,
+            "logoURI": "ipfs://bafybeid6usttpc5jkdrdilfsia5s5btr6qg7p7go2hwyah52aepjy36gci",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 97,
+            "address": "0x1C985A5a777079eAE21976ea195d697F79BC3635",
+            "symbol": "DSS",
+            "name": "Dark Salamander Shifter",
+            "decimals": 0,
+            "logoURI": "ipfs://bafybeifcdi5nzbb6ld744lqmama4dlxteymd4q7npx6bwqz7qctn7xdtsa",
+            "tags": [
+                "staqe"
+            ]
         }
     ],
     "version": {
         "major": 0,
         "minor": 0,
-        "patch": 5
+        "patch": 6
     }
 }
