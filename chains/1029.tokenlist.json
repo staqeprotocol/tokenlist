@@ -11,7 +11,7 @@
             "description": "Tokens used to create a pool in Staqe.App"
         }
     },
-    "timestamp": "2024-05-06T00:58:09.817069+00:00",
+    "timestamp": "2024-05-07T00:57:08.579838+00:00",
     "tokens": [
         {
             "chainId": 1029,
@@ -67,11 +67,33 @@
             "tags": [
                 "staqe"
             ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0x7b0dE202f15a255Ad69C9B8eaC19d10eAE00eA3A",
+            "symbol": "WCL",
+            "name": "Witty Centaur Loudener",
+            "decimals": 18,
+            "logoURI": "ipfs://bafybeid6usttpc5jkdrdilfsia5s5btr6qg7p7go2hwyah52aepjy36gci",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0xCa76B0738a1d8483f47F5caE96028ad1e9ABb05B",
+            "symbol": "SPS",
+            "name": "Soggy Phoenix Shaper",
+            "decimals": 0,
+            "logoURI": "ipfs://bafybeifcdi5nzbb6ld744lqmama4dlxteymd4q7npx6bwqz7qctn7xdtsa",
+            "tags": [
+                "staqe"
+            ]
         }
     ],
     "version": {
         "major": 0,
         "minor": 0,
-        "patch": 5
+        "patch": 6
     }
 }
