@@ -11,7 +11,7 @@
             "description": "Tokens used to create a pool in Staqe.App"
         }
     },
-    "timestamp": "2024-06-08T01:00:09.185360+00:00",
+    "timestamp": "2024-06-09T01:05:44.316369+00:00",
     "tokens": [
         {
             "chainId": 1029,
@@ -89,11 +89,33 @@
             "tags": [
                 "staqe"
             ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0xF5ea9584ed71A6A755b0E537c626D418b19F41aC",
+            "symbol": "GDD",
+            "name": "Galactic Djinn Decreaser",
+            "decimals": 18,
+            "logoURI": "ipfs://bafybeibvbpnqig2vlzdwh7jrme45zbgl5df4b76dkvsz3mqgu3eqpsnymy",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0xCb03398b88BA6e202Fe1fb558152c7d2C24f5548",
+            "symbol": "CSW",
+            "name": "Cranky Sphinx Whisperer",
+            "decimals": 0,
+            "logoURI": "ipfs://bafybeid6usttpc5jkdrdilfsia5s5btr6qg7p7go2hwyah52aepjy36gci",
+            "tags": [
+                "staqe"
+            ]
         }
     ],
     "version": {
         "major": 0,
         "minor": 0,
-        "patch": 38
+        "patch": 39
     }
 }
