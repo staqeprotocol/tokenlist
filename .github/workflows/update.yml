@@ -25,8 +25,7 @@ jobs:
       - name: Run the update script and get version
         id: get_version
         run: |
-          VERSION=$(python ./src/update.py)
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "VERSION=$(python ./src/update.py)" >> $GITHUB_ENV
 
       - name: Commit and push if changes
         run: |
@@ -37,3 +36,4 @@ jobs:
             git push
           else
             echo "No changes to commit"
+          fi
