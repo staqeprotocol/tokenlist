@@ -23,18 +23,18 @@ chains = {
 
 contract_abi = [
     {
-      "type": "function",
-      "name": "getTotalPools",
-      "inputs": [],
-      "outputs": [{"name": "", "type": "uint256", "internalType": "uint256"}],
-      "stateMutability": "view"
+        "type": "function",
+        "name": "getTotalPools",
+        "inputs": [],
+        "outputs": [{"name": "", "type": "uint256", "internalType": "uint256"}],
+        "stateMutability": "view"
     },
     {
-      "type": "function",
-      "name": "tokenURI",
-      "inputs": [{"name": "tokenId", "type": "uint256", "internalType": "uint256"}],
-      "outputs": [{"name": "", "type": "string", "internalType": "string"}],
-      "stateMutability": "view"
+        "type": "function",
+        "name": "tokenURI",
+        "inputs": [{"name": "tokenId", "type": "uint256", "internalType": "uint256"}],
+        "outputs": [{"name": "", "type": "string", "internalType": "string"}],
+        "stateMutability": "view"
     }
 ]
 
@@ -97,6 +97,9 @@ for chain_id, chain_details in chains.items():
     for i in range(1, total_pools + 1):
         try:
             ipfs_hash = contract.functions.tokenURI(i).call()
+            # Correct the IPFS hash if necessary
+            if ipfs_hash.startswith("ipfs://"):
+                ipfs_hash = ipfs_hash[7:]
             metadata = fetch_ipfs_metadata(ipfs_hash)
             tokens = metadata.get("tokens", [])
             for token in tokens:
