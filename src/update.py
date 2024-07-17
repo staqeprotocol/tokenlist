@@ -86,6 +86,8 @@ def update_token_list(chain_id, new_tokens):
 
     return f"{v['major']}.{v['minor']}.{v['patch']}"
 
+errors = []
+
 for chain_id, chain_details in chains.items():
     w3 = Web3(Web3.HTTPProvider(chain_details['rpc_url']))
     contract = w3.eth.contract(address=chain_details['contract_address'], abi=contract_abi)
@@ -99,11 +101,11 @@ for chain_id, chain_details in chains.items():
         try:
             ipfs_hash = contract.functions.tokenURI(i).call()
             # Check for and skip incorrect IPFS URL prefixes
-            if "_ipfs://" in ipfs_hash:
-                print(f"Skipping invalid IPFS hash for tokenId {i}: {ipfs_hash}")
+            if ipfs_hash.startswith("_ipfs://"):
+                errors.append(f"Skipping invalid IPFS hash for tokenId {i}: {ipfs_hash}")
                 continue
             # Remove any incorrect prefix that might have been added
-            if "ipfs://" not in ipfs_hash:
+            if not ipfs_hash.startswith("ipfs://"):
                 ipfs_hash = f"ipfs://{ipfs_hash}"
             metadata = fetch_ipfs_metadata(ipfs_hash)
             tokens = metadata.get("tokens", [])
@@ -120,12 +122,16 @@ for chain_id, chain_details in chains.items():
                     })
                     added_addresses.add(token["address"])
         except requests.exceptions.RequestException as e:
-            print(f"HTTP error for tokenId {i}: {str(e)}")
+            errors.append(f"HTTP error for tokenId {i}: {str(e)}")
         except json.JSONDecodeError as e:
-            print(f"JSON decode error for tokenId {i}: {str(e)}")
+            errors.append(f"JSON decode error for tokenId {i}: {str(e)}")
         except Exception as e:
-            print(f"Failed to fetch tokenURI for tokenId {i}: {str(e)}")
+            errors.append(f"Failed to fetch tokenURI for tokenId {i}: {str(e)}")
 
     version = update_token_list(chain_id, all_tokens)
 
 print(version)
+if errors:
+    print("Errors encountered:")
+    for error in errors:
+        print(error)
