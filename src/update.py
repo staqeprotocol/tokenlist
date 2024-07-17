@@ -101,7 +101,7 @@ for chain_id, chain_details in chains.items():
         try:
             ipfs_hash = contract.functions.tokenURI(i).call()
             # Check for and skip incorrect IPFS URL prefixes
-            if ipfs_hash.startswith("_ipfs://"):
+            if "_ipfs://" in ipfs_hash:
                 errors.append(f"Skipping invalid IPFS hash for tokenId {i}: {ipfs_hash}")
                 continue
             # Remove any incorrect prefix that might have been added
@@ -135,3 +135,5 @@ if errors:
     print("Errors encountered:")
     for error in errors:
         print(error)
+else:
+    print("No errors encountered.")
