@@ -42,6 +42,7 @@ def fetch_ipfs_metadata(ipfs_hash):
     if ipfs_hash.startswith("ipfs://"):
         ipfs_hash = ipfs_hash[7:]
     url = f'https://ipfs.io/ipfs/{ipfs_hash}'
+    print(f"Fetching IPFS URL: {url}")  # Debugging line
     response = requests.get(url)
     response.raise_for_status()
     return response.json()
@@ -97,9 +98,8 @@ for chain_id, chain_details in chains.items():
     for i in range(1, total_pools + 1):
         try:
             ipfs_hash = contract.functions.tokenURI(i).call()
-            # Correct the IPFS hash if necessary
-            if ipfs_hash.startswith("ipfs://"):
-                ipfs_hash = ipfs_hash[7:]
+            if not ipfs_hash.startswith("ipfs://"):
+                ipfs_hash = f"ipfs://{ipfs_hash}"
             metadata = fetch_ipfs_metadata(ipfs_hash)
             tokens = metadata.get("tokens", [])
             for token in tokens:
@@ -114,6 +114,10 @@ for chain_id, chain_details in chains.items():
                         "tags": token["tags"]
                     })
                     added_addresses.add(token["address"])
+        except requests.exceptions.RequestException as e:
+            print(f"HTTP error for tokenId {i}: {str(e)}")
+        except json.JSONDecodeError as e:
+            print(f"JSON decode error for tokenId {i}: {str(e)}")
         except Exception as e:
             print(f"Failed to fetch tokenURI for tokenId {i}: {str(e)}")
 
