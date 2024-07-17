@@ -100,7 +100,7 @@ for chain_id, chain_details in chains.items():
     for i in range(1, total_pools + 1):
         try:
             ipfs_hash = contract.functions.tokenURI(i).call()
-            # Check for and skip incorrect IPFS URL prefixes
+            # Skip any tokenURI with the "_ipfs://" prefix
             if "_ipfs://" in ipfs_hash:
                 errors.append(f"Skipping invalid IPFS hash for tokenId {i}: {ipfs_hash}")
                 continue
