@@ -11,7 +11,7 @@
             "description": "Tokens used to create a pool in Staqe.App"
         }
     },
-    "timestamp": "2024-07-13T01:03:07.680889+00:00",
+    "timestamp": "2024-07-17T16:04:07.996353+00:00",
     "tokens": [
         {
             "chainId": 1029,
@@ -111,11 +111,33 @@
             "tags": [
                 "staqe"
             ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0x7895805C2159e0D8A4Cde675c37edc02d0F1fB39",
+            "symbol": "SMS",
+            "name": "Sticky Mermaid Sniffer",
+            "decimals": 18,
+            "logoURI": "ipfs://bafybeidczrqhhx4i72ri2jahip3eq54snabibpieoqzretxdg4noyme4qi",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 1029,
+            "address": "0x3d7239a429B0408ccb6C79CfF542E4E4cAe52018",
+            "symbol": "MCM",
+            "name": "Magical Cockatrice Maker",
+            "decimals": 0,
+            "logoURI": "ipfs://bafybeiczwrlyzh4dk4a3orgxb5cy6vxs5hggq42rigfz2jk5fakeosc4c4",
+            "tags": [
+                "staqe"
+            ]
         }
     ],
     "version": {
         "major": 0,
         "minor": 0,
-        "patch": 72
+        "patch": 73
     }
 }
