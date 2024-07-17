@@ -3,6 +3,7 @@ import json
 import requests
 from pathlib import Path
 from datetime import datetime, timezone
+import sys
 
 version = ""
 
@@ -42,7 +43,6 @@ def fetch_ipfs_metadata(ipfs_hash):
     if ipfs_hash.startswith("ipfs://"):
         ipfs_hash = ipfs_hash[7:]
     url = f'https://ipfs.io/ipfs/{ipfs_hash}'
-    print(f"Fetching IPFS URL: {url}")  # Debugging line
     response = requests.get(url)
     response.raise_for_status()
     return response.json()
@@ -130,10 +130,11 @@ for chain_id, chain_details in chains.items():
 
     version = update_token_list(chain_id, all_tokens)
 
+# Print version to stdout
 print(version)
+
+# Print errors to stderr
 if errors:
-    print("Errors encountered:")
+    print("Errors encountered:", file=sys.stderr)
     for error in errors:
-        print(error)
-else:
-    print("No errors encountered.")
+        print(error, file=sys.stderr)
