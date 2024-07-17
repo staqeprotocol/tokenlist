@@ -3,7 +3,6 @@ import json
 import requests
 from pathlib import Path
 from datetime import datetime, timezone
-import sys
 
 version = ""
 
@@ -86,6 +85,7 @@ def update_token_list(chain_id, new_tokens):
 
     return f"{v['major']}.{v['minor']}.{v['patch']}"
 
+error_log = Path("./error_log.txt")
 errors = []
 
 for chain_id, chain_details in chains.items():
@@ -133,8 +133,8 @@ for chain_id, chain_details in chains.items():
 # Print version to stdout
 print(version)
 
-# Print errors to stderr
+# Write errors to error log file
 if errors:
-    print("Errors encountered:", file=sys.stderr)
-    for error in errors:
-        print(error, file=sys.stderr)
+    with open(error_log, "w") as file:
+        for error in errors:
+            file.write(f"{error}\n")
