@@ -11,7 +11,7 @@
             "description": "Tokens used to create a pool in Staqe.App"
         }
     },
-    "timestamp": "2024-09-11T01:07:58.990733+00:00",
+    "timestamp": "2024-09-17T23:27:03.849054+00:00",
     "tokens": [
         {
             "chainId": 1029,
@@ -138,6 +138,6 @@
     "version": {
         "major": 0,
         "minor": 0,
-        "patch": 129
+        "patch": 130
     }
 }
