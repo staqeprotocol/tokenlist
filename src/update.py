@@ -18,6 +18,10 @@ chains = {
     97: {
         "rpc_url": "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
         "contract_address": "0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f"
+    },
+    167009: {
+        "rpc_url": "https://rpc.hekla.taiko.xyz",
+        "contract_address": "0xc9b0a1C9AafdF4128549cC80B682832dE5a133a9"
     }
 }
 
