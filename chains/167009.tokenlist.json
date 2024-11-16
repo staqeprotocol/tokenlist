@@ -1,0 +1,55 @@
+{
+    "name": "Staqe Protocol",
+    "logoURI": "https://bafybeibkoohmrfcoltp63ga7c63ww5v45pupm22pavminkzgxgqq7cmd5q.ipfs.dweb.link",
+    "keywords": [
+        "stake",
+        "pool"
+    ],
+    "tags": {
+        "staqe": {
+            "name": "Staqe Protocol",
+            "description": "Tokens used to create a pool in Staqe.App"
+        }
+    },
+    "timestamp": "2024-11-16T01:14:21.072551+00:00",
+    "tokens": [
+        {
+            "chainId": 167009,
+            "address": "0x1749edd08de498851Cb7E079761e358904446a36",
+            "symbol": "SSM",
+            "name": "Silly Sasquatch Multiplier",
+            "decimals": 18,
+            "logoURI": "ipfs://bafybeifgl2otealsh2mckt5fb42qtkl3tumfnmkj7pjsuw6qiyfr3mouoa",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 167009,
+            "address": "0x0e131b842b2eF6A9A56C833c372da0ca9C381b76",
+            "symbol": "SMS",
+            "name": "Skinny Medusa Shaper",
+            "decimals": 0,
+            "logoURI": "ipfs://bafybeiamozbawdxq574tnhzuentml7nofaqwluzynifv2jeaekmdo6albm",
+            "tags": [
+                "staqe"
+            ]
+        },
+        {
+            "chainId": 167009,
+            "address": "0xCD25BCcFC2C2ACf53c561f4DaF709601199e8af0",
+            "symbol": "RWD",
+            "name": "Reward Token",
+            "decimals": 18,
+            "logoURI": "ipfs://bafybeicugpr4bc27g2qy55wnti52rkgw2wkrbhdy5hzqulvwttmtxpdvbu",
+            "tags": [
+                "staqe"
+            ]
+        }
+    ],
+    "version": {
+        "major": 0,
+        "minor": 0,
+        "patch": 1
+    }
+}
