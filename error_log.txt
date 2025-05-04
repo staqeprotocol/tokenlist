@@ -1,4 +1,3 @@
-HTTP error for tokenId 1: 504 Server Error: Gateway Timeout for url: https://ipfs.io/ipfs/QmcQF9xEBAyxsNADPiGL2WM5nptPkLDD2HENjbu3KGuoAZ
 Skipping invalid IPFS hash for tokenId 5: _ipfs://bafybeicf56kqmfdh777pvypt3ylxck37totgqaatdsdb626vc3vpu5pdem
 Skipping invalid IPFS hash for tokenId 6: _ipfs://bafybeidjwkpuegr33jsir3i3n3idb6ks6c3tezvlptzruyo6txidclg72a
 Skipping invalid IPFS hash for tokenId 7: _ipfs://bafybeic4epey5rylmu2gdxt4nzidhsi5mtyvv35oedj2jidopx7w4ooymm
