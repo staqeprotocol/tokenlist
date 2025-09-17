@@ -1,3 +1,10 @@
+HTTP error for tokenId 2: 500 Server Error: Internal Server Error for url: https://ipfs.io/ipfs/QmXupGKxA22wpGAJiQcPqqXSmHkkUmQ1zgBrgrsWCaA2pw
+HTTP error for tokenId 3: 500 Server Error: Internal Server Error for url: https://ipfs.io/ipfs/QmZVNv4WHnPvGRS494CXD7EPmw94nZumnFbHsvEp2bWKri
+HTTP error for tokenId 1: 500 Server Error: Internal Server Error for url: https://ipfs.io/ipfs/Qmcw3uVks6fRG8w8K5tQhqoXHwmcxbT5f2h4Ha3TUAdGAE
+HTTP error for tokenId 4: 500 Server Error: Internal Server Error for url: https://ipfs.io/ipfs/bafybeifet4zltlop6yskmvcv653blsdnhqtozpvq2uehy3wuysnlan7r5e
 Skipping invalid IPFS hash for tokenId 5: _ipfs://bafybeicf56kqmfdh777pvypt3ylxck37totgqaatdsdb626vc3vpu5pdem
 Skipping invalid IPFS hash for tokenId 6: _ipfs://bafybeidjwkpuegr33jsir3i3n3idb6ks6c3tezvlptzruyo6txidclg72a
 Skipping invalid IPFS hash for tokenId 7: _ipfs://bafybeic4epey5rylmu2gdxt4nzidhsi5mtyvv35oedj2jidopx7w4ooymm
+HTTP error for tokenId 8: 500 Server Error: Internal Server Error for url: https://ipfs.io/ipfs/bafybeie3qhyuovqcustzd2irskphab52tzrsaiijlgobe6x5rdacdfbt6a
+HTTP error for tokenId 1: 500 Server Error: Internal Server Error for url: https://ipfs.io/ipfs/bafybeigopepoqwckszd74oc5ylvgfbccifwka4s7numz3uuggwx4mtnzui
+HTTP error for tokenId 2: 500 Server Error: Internal Server Error for url: https://ipfs.io/ipfs/bafybeif3lprjx4kjzoeveda4mmoybivjobkvfg7obtlavuvktq7y5gwehu
